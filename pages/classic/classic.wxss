@@ -1,0 +1,42 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header{
+  display: flex;
+  padding: 0 20rpx;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.nav{
+  position: absolute;
+  bottom: 40rpx;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper-btn{
+  padding: 0;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+   background-color: white;
+}
+.wrapper-btn::after{
+  border: none;
+}
+.wrapper image{
+  display: flex;
+  align-items: center;
+  width: 40rpx;
+}

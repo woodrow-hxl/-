@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tag": "/components/tag/tag",
+    "book": "/components/book/book",
+    "loading": "/components/loading/loading"
+  }
+}

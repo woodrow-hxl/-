@@ -1,0 +1,10 @@
+.container{
+    display: inline-flex;
+    padding: 4rpx 12rpx;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 28rpx;
+    color: #666;
+    background-color: #f5f5f5;
+}

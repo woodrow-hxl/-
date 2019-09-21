@@ -1,0 +1,4 @@
+<view class="container">
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+</view>

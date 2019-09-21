@@ -1,0 +1,30 @@
+<view class="container">
+    <image class="bgImg" mode="widthFix" src="/images/myLike/my@bg.png"></image>
+    <view class="userImg" wx:if="{{!login}}">
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            <image mode="widthFix" src="/images/myLike/user.png"></image>
+        </button>
+    </view>
+    <view class="userImg login" wx:else>
+        <image mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+        <text>{{userInfo.nickName}}</text>
+    </view>
+    <view class="about-wrapper">
+        <view class="about">
+            <image mode="widthFix" src="/images/myLike/about.png"></image>
+            <text>关于我们</text>
+        </view>
+        <view class="bookCount">
+            <text class="like-count">{{bookCount}}</text>
+            <text class="like-book">喜欢的书</text>
+        </view>
+    </view>
+    <view class="like-container">
+        <image class="like-title" src="/images/myLike/like.png"></image>
+        <view class="like-list">
+            <block wx:for="{{classic}}" wx:key="index">
+            <like-list bind:tapping="onTapping" classic="{{item}}"/>
+            </block>
+        </view>
+    </view>
+</view>

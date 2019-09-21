@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0095ac7-9809-41e1-9412-66a78478bc90" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QgxAAgBodaTCk5oPRlcIT9Gi3M" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/h5/h5/WeChat/bilibili" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\boyue-information\components\search" />
+      <recent name="E:\project\boyue-information" />
+      <recent name="E:\project\boyue-information\utils" />
+      <recent name="E:\project\boyue-information\images" />
+      <recent name="E:\project\boyue-information\components\classic\essay" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\boyue-information\components\classic" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0095ac7-9809-41e1-9412-66a78478bc90" name="Default Changelist" comment="" />
+      <created>1568205894847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568205894847</updated>
+      <workItem from="1568205896079" duration="2974000" />
+      <workItem from="1568215738249" duration="1230000" />
+      <workItem from="1568251821483" duration="21000" />
+      <workItem from="1568276082054" duration="3118000" />
+      <workItem from="1568290229173" duration="9443000" />
+      <workItem from="1568340080495" duration="30255000" />
+      <workItem from="1568430412667" duration="20663000" />
+      <workItem from="1568515991604" duration="17863000" />
+      <workItem from="1568597504793" duration="19000" />
+      <workItem from="1568618062978" duration="13169000" />
+      <workItem from="1568687944135" duration="32000" />
+      <workItem from="1568708752286" duration="12928000" />
+      <workItem from="1568770347505" duration="603000" />
+      <workItem from="1568795486423" duration="7988000" />
+      <workItem from="1568859216809" duration="3300000" />
+      <workItem from="1568875283290" duration="5923000" />
+      <workItem from="1568881843487" duration="817000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

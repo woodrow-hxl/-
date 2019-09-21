@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "book": "/components/book/book",
+    "search":"/components/search/search"
+  }
+}

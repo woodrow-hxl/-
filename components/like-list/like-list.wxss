@@ -1,0 +1,38 @@
+.container{
+    width: 330rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .tag{
+    margin-left: 20rpx;
+    width: 72rpx;
+    height: 40rpx;
+    text-align: center;
+    font-size: 24rpx;
+    background-color: #f7f7f7;
+}
+.likeImg{
+    width: 100%;
+    height: 240rpx;
+}
+.musicImg{
+    width: 240rpx;
+    border-radius: 50%;
+}
+.text{
+    height: 190rpx;
+    padding: 30rpx;
+    font-size: 28rpx;
+    color: #666;
+    box-sizing: border-box;
+    overflow: hidden;
+}

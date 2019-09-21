@@ -1,0 +1,84 @@
+<wxs src="../../utils/filter.wxs" module="filter"/>
+<view class="container">
+    <view class="header">
+        <image src="{{detail.image}}"></image>
+        <text class="title">{{detail.title}}</text>
+        <text class="author">{{detail.author}}</text>
+    </view>
+    <view class="wrapper">
+        <text class="wrapper-title">短评</text>
+        <text class="no-commnet" wx:if="{{comment.length==0}}">再无短评</text>
+        <view class="comment">
+            <block wx:for="{{filter.limit(comments,10)}}" wx:key="index">
+                <tag tag-class="{{color.highLight(index)}}" content="{{item.content}}">
+                    <text class="num" slot="after">{{'+'+item.nums}}</text>
+                </tag>
+            </block>
+        </view>
+    </view>
+    <view class="wrapper">
+        <text class="wrapper-title">内容简介</text>
+        <text class="content" decode="{{true}}">{{filter.format(detail.summary)}}</text>
+    </view>
+    <view class="wrapper">
+        <text class="wrapper-title">书本信息</text>
+        <view class="book-info">
+            <view class="book-desc info-desc">
+                <text>出版社</text>
+                <text>出版年</text>
+                <text>页数</text>
+                <text>定价</text>
+                <text>装帧</text>
+            </view>
+            <view class="book-desc">
+                <text>{{detail.publisher}}</text>
+                <text>{{detail.pubdate}}</text>
+                <text>{{detail.pages}}</text>
+                <text>{{detail.price}}</text>
+                <text>{{detail.binding}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="input-container" wx:if="{{show}}">
+    <view bindtap="onInput" class="input-wrapper">
+        <text>输入短评</text>
+    </view>
+    <view class="like-wrapper">
+        <like bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}"/>
+        <button class="like-btn" open-type="share" >
+            <image mode="widthFix" src="/images/icon/share.png"></image>
+        </button>
+    </view>
+</view>
+<view class="comment-container" wx:if="{{!show}}">
+    <view class="comment-header">
+        <text wx:if="{{comments.length>0}}">仅可点击标签+1</text>
+        <text wx:else>暂无短评</text>
+        <text bindtap="onInput" class="cancel">取消</text>
+    </view>
+    <view class="comment comment-chance">
+        <block wx:for="{{filter.limit(comments,3)}}" wx:key="index">
+            <tag bind:tapping="onPost" tag-class="{{color.highLight(index)}}" content="{{item.content}}">
+                <text class="num" slot="after">{{'+'+item.nums}}</text>
+            </tag>
+        </block>
+    </view>
+    <input bindconfirm="onPost" class="input-comment" placeholder="短评最多12个字"/>
+</view>
+<view class="mask" wx:if="{{!show}}"></view>
+<wxs module="color">
+    var highLight=function(index){
+        if(index==0){
+             return 'ex-tag1'
+        }
+        if(index==1){
+            return 'ex-tag2'
+        }else{
+             return ''
+        }
+    }
+    module.exports={
+        highLight:highLight
+    }
+</wxs>

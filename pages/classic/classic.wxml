@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="header">
+        <episode class="episode" index="{{classic.index}}"/>
+        <view class="wrapper">
+            <like bind:like="onLike" count="{{likeCount}}" like="{{likeStatus}}"/>
+            <button class="wrapper-btn" open-type="share" >
+                <image mode="widthFix" src="/images/icon/share.png"></image>
+            </button>
+        </view>
+
+    </view>
+    <movie hidden="{{classic.type!=100}}" img="{{classic.image}}" content="{{classic.content}}"/>
+    <music wx:if="{{classic.type==200}}" src="{{classic.url}}" img="{{classic.image}}"
+           content="{{classic.content}}" title="{{classic.title}}"/>
+    <essay hidden="{{classic.type!=300}}" img="{{classic.image}}" content="{{classic.content}}"/>
+    <navigation bind:left="onNext" bind:right="onPrevious" class="nav"
+                first="{{first}}" latest="{{latest}}" title="{{classic.title}}"/>
+</view>

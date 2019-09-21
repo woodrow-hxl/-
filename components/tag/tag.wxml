@@ -1,0 +1,4 @@
+<view bindtap="onTap" class="container tag-class">
+    <text class="comment">{{content}}</text>
+    <slot name="after"></slot>
+</view>

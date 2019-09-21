@@ -1,0 +1,8 @@
+<view bindtap="onTap" class="container">
+    <view class="header">
+        <tag tag-class="tag" content="{{textType}}"></tag>
+        <like read-only="{{true}}" like="{{classic.like_status}}" count="{{classic.fav_nums}}"/>
+    </view>
+    <image mode="widthFix" class="likeImg {{classic.type==200?'musicImg':''}}" src="{{classic.image}}"></image>
+    <view class="text">{{classic.content}}</view>
+</view>
